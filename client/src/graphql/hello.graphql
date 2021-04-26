@@ -1,0 +1,6 @@
+query Hello {
+  user {
+    id
+    email
+  }
+}

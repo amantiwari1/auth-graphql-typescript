@@ -8,7 +8,7 @@ export const isAuth: MiddlewareFn<MyContext> = async (
 ) => {
   const authorization = context.req.headers["authorization"];
   if (!authorization) {
-    throw new Error("not authorization");
+    throw new Error("not authorized");
   }
   try {
     const token = authorization?.split(" ")[1];
